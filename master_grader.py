@@ -16,7 +16,7 @@ import pyperclip
 import sys
 import re
 import json
-from pprint import pprint
+# from pprint import pprint
 keyboard = Controller()
 
 del globals()["Button"]
