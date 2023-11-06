@@ -1,7 +1,13 @@
 {
-    "screenVars": {
+    "TA initials": "ED",
+    "spinbox increment": 0.25,
 
-    },
+    "appWidth": 400,
+    "appHeight": 600,
+    "placeCommentX": 450,
+    "placeCommentY": 520,
+    "appTitleBarX": 1417,
+    "appTitleBarY": 40,
 
     "sections": {
         "general": {
@@ -92,7 +98,7 @@
             ]
         },
 
-        "worksheet": {
+        "DSO worksheet": {
             "doInclude": false,
             "defaultPoints": 30,
             "rubric": [
@@ -106,7 +112,7 @@
             ]
         },
 
-        "worksheet graphs": {
+        "DSO worksheet graphs": {
             "doInclude": false,
             "defaultPoints": null,
             "rubric": [
@@ -125,10 +131,7 @@
         "notebook": {
             "doInclude": true,
             "defaultPoints": 10,
-            "rubric": [
-                "example1 (-2)",
-                "example2 (-1)"
-            ]
+            "rubric": []
         }
     }
 }

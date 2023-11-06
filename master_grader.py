@@ -23,7 +23,7 @@ del globals()["Button"]
 from tkinter import Button as tkButton
 
 
-CONFIG_PATH = "/Users/eli/CWRU/TA/Spring 2023/grading-app/RCCIR-config.json"
+CONFIG_PATH = "/Users/eli/CWRU/TA/Spring 2023/grading-app/config.json"
 POINTS_ENTRY_WIDTH = 5
 
 with open(CONFIG_PATH) as json_data_file:
@@ -32,6 +32,12 @@ with open(CONFIG_PATH) as json_data_file:
 
 APP_WIDTH = config['appWidth']
 APP_HEIGHT = config['appHeight']
+INCREMENT = 0.25
+
+try:
+    INCREMENT = config['spinbox increment']
+except:
+    pass
 
 sections = []
 maxPoints = {}
@@ -234,7 +240,7 @@ if __name__ == "__main__":
         sectionPointsLabels[section].pack()
         sectionEntryNumbers[section] = StringVar()
         sectionEntryNumbers[section].set(str(points[section]))
-        sectionEntrySpinboxes[section] = Spinbox(sectionPointsFrames[section], width=POINTS_ENTRY_WIDTH, textvariable=sectionEntryNumbers[section], format="%.2f", from_=0, to=maxPoints[section]+10, increment=0.25)#, repeatdelay=1000, repeatinterval=250)
+        sectionEntrySpinboxes[section] = Spinbox(sectionPointsFrames[section], width=POINTS_ENTRY_WIDTH, textvariable=sectionEntryNumbers[section], format="%.2f", from_=0, to=maxPoints[section]+10, increment=INCREMENT)#, repeatdelay=1000, repeatinterval=250)
         sectionEntrySpinboxes[section].pack()
 
     for section in sectionEntryNumbers:
@@ -257,7 +263,7 @@ if __name__ == "__main__":
         if int(score) == score:
             score = int(score)
         s += f"Total: {score}/{MAX_POSSIBLE_POINTS}\n"
-        s += "(Graded by: ED)"
+        s += f"(Graded by: {config['TA initials']})"
 
         pyperclip.copy(s)
 
@@ -309,7 +315,7 @@ if __name__ == "__main__":
 
             sectionRubricButtons[section][i].pack(side = 'top', anchor='w')
 
-    extraSpaceLabel = Label(frame, text=f"\nMade by Eli Doyle")
+    extraSpaceLabel = Label(frame, text=f"\nMade by Eli Doyle to ease the pain of grading :)")
     extraSpaceLabel.pack(side = 'top', anchor='w')
 
     
