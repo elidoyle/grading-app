@@ -23,7 +23,7 @@ del globals()["Button"]
 from tkinter import Button as tkButton
 
 
-CONFIG_PATH = "/Users/eli/CWRU/TA/Spring 2023/grading-app/config.json"
+CONFIG_PATH = "/Users/eli/CWRU/TA/Spring 2023/grading-app/configs/config.json"
 POINTS_ENTRY_WIDTH = 5
 
 with open(CONFIG_PATH) as json_data_file:

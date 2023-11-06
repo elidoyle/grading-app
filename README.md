@@ -35,6 +35,8 @@ The rubric is configured through a JSON file called "config.json". You can edit 
 
 If you wish to have a separate section for buttons to grade graphs (I like this), preface that section with which section to deduct points from (examples: "analysis graphs", "worksheet graphs", "MAG graphs"). defaultPoints for a graph section should be set to null.
 
+The only thing in the actual master_grader.py file that you need to edit is CONFIG_PATH. Change this to the absolute path of the config file you want to use.
+
 ## Other parameters in config.json
 ### GUI Geometry
 #### appWidth
@@ -60,6 +62,7 @@ The y coordinate of anywhere on the title bar (where it says "Grader") that isn'
 To open the app from Terminal, cd into the downloaded folder, activate the venv, and run: `python master_grader.py`. To run it again, hit the up arrow key to get to your previous commands.
 
 ## Creating a Dock icon for easy initialization
+Terminal is better to start with so you can see any potential non-fatal errors. Once you ensure things work, this is a handy thing to have.
 1. Open Automator.app and select File -> New -> Application.
 2. Search the Actions for "Run Shell Script". Drag this over to the right side and drop it.
 3. Shell: /bin/zsh

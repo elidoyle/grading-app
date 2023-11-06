@@ -1,0 +1,91 @@
+{
+    "TA initials": "ED",
+    "spinbox increment": 0.25,
+
+    "appWidth": 400,
+    "appHeight": 600,
+    "placeCommentX": 450,
+    "placeCommentY": 520,
+    "appTitleBarX": 1417,
+    "appTitleBarY": 40,
+
+    "sections": {
+        "general": {
+            "doInclude": false,
+            "defaultPoints": 6,
+            "rubric": [
+                
+            ]
+        },
+
+        "abstract": {
+            "doInclude": false,
+            "defaultPoints": 4,
+            "rubric": [
+               
+            ]
+        },
+
+        "theory": {
+            "doInclude": false,
+            "defaultPoints": 9,
+            "rubric": [
+               
+            ]
+        },
+
+        "procedure": {
+            "doInclude": false,
+            "defaultPoints": 15,
+            "rubric": [
+             
+            ]
+        },
+
+        "analysis": {
+            "doInclude": false,
+            "defaultPoints": 20,
+            "rubric": [
+               
+            ]
+        },
+
+        "analysis graphs": {
+            "doInclude": false,
+            "defaultPoints": null,
+            "rubric": [
+                
+            ]
+        },
+
+        "conclusion": {
+            "doInclude": false,
+            "defaultPoints": 6,
+            "rubric": [
+                
+            ]
+        },
+
+        "worksheet": {
+            "doInclude": false,
+            "defaultPoints": 30,
+            "rubric": [
+               
+            ]
+        },
+
+        "worksheet graphs": {
+            "doInclude": false,
+            "defaultPoints": null,
+            "rubric": [
+
+            ]
+        },
+        
+        "notebook": {
+            "doInclude": true,
+            "defaultPoints": 10,
+            "rubric": []
+        }
+    }
+}

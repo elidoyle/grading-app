@@ -1,0 +1,63 @@
+{
+    "screenVars": {
+
+    },
+
+    "sections": {
+
+
+
+        "MAG":{
+            "doInclude": true,
+            "defaultPoints": 30,
+            "rubric": [
+                
+            ]
+        },
+        
+        "MAG graphs":{
+            "doInclude": true,
+            "defaultPoints": null,
+            "rubric": [
+                "title: of what? be descriptive (-0.25)",
+                "axis units (-0.25)",
+                "x error bars (-0.25)",
+                "y error bars (-0.25)",
+                "no error bars (-0.5)",
+                "fix legend (-0.25)",
+                "didn't rewrite slope and intercept with proper sig figs and units (-0.5)",
+                "axes flipped (-1)",
+                "graphs shouldn't be phone pictures of computer screens (-0.25)"
+            ]
+        },
+
+
+
+        "IND":{
+            "doInclude": true,
+            "defaultPoints": 30,
+            "rubric": [
+                
+            ]
+        },
+
+        "IND graphs":{
+            "doInclude": true,
+            "defaultPoints": null,
+            "rubric": [
+                
+            ]
+        },
+
+
+
+        "notebook": {
+            "doInclude": true,
+            "defaultPoints": 10,
+            "rubric": [
+                "example1 (-2)",
+                "example2 (-1)"
+            ]
+        }
+    }
+}
